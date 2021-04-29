@@ -6,7 +6,8 @@ namespace Corona
 {
     public partial class Settings : Form
     {
-                public bool unmut = true;
+        Scrapper scrapper = new Scrapper();
+        public bool unmut = true;
         public string piesen;
         
         public Settings()
@@ -17,6 +18,9 @@ namespace Corona
             InitializeComponent();
             muteunmutelogo();
             vyber_piesen();
+            
+            linkLabel1.Text = scrapper.stranka;
+
         }
 
         public void vyber_piesen()   
@@ -75,9 +79,9 @@ namespace Corona
             }
         }
 
-
-
-
-        
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)   //ked sa klikne na link otvori sa stranka
+        {
+            System.Diagnostics.Process.Start(((LinkLabel)sender).Text);
+        }
     }
 }

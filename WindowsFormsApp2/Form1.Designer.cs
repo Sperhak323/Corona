@@ -46,47 +46,51 @@ namespace Corona
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("News701 BT", 36F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(646, 228);
+            this.label1.Location = new System.Drawing.Point(473, 228);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(160, 58);
+            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label1.Size = new System.Drawing.Size(435, 58);
             this.label1.TabIndex = 0;
-            this.label1.Text = "00000";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Text = "000000";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("News701 BT", 36F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(646, 301);
+            this.label2.Location = new System.Drawing.Point(473, 301);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 3, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(160, 58);
+            this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label2.Size = new System.Drawing.Size(435, 58);
             this.label2.TabIndex = 1;
-            this.label2.Text = "00000";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2.Text = "000000";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("News701 BT", 36F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label3.Location = new System.Drawing.Point(646, 371);
+            this.label3.Location = new System.Drawing.Point(473, 374);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 3, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(160, 58);
+            this.label3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label3.Size = new System.Drawing.Size(435, 58);
             this.label3.TabIndex = 2;
-            this.label3.Text = "00000";
+            this.label3.Text = "000000";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label4
             // 
@@ -118,7 +122,7 @@ namespace Corona
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("News701 BT", 36F, System.Drawing.FontStyle.Bold);
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label6.Location = new System.Drawing.Point(5, 371);
+            this.label6.Location = new System.Drawing.Point(5, 374);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(319, 58);
             this.label6.TabIndex = 5;
@@ -130,9 +134,9 @@ namespace Corona
             this.settingsbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.settingsbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.settingsbutton.Font = new System.Drawing.Font("News701 BT", 12.25F, System.Drawing.FontStyle.Bold);
-            this.settingsbutton.Location = new System.Drawing.Point(656, 12);
+            this.settingsbutton.Location = new System.Drawing.Point(766, 12);
             this.settingsbutton.Name = "settingsbutton";
-            this.settingsbutton.Size = new System.Drawing.Size(132, 28);
+            this.settingsbutton.Size = new System.Drawing.Size(132, 40);
             this.settingsbutton.TabIndex = 6;
             this.settingsbutton.Text = "Nastavenia";
             this.settingsbutton.UseVisualStyleBackColor = false;
@@ -188,7 +192,6 @@ namespace Corona
             // 
             // label11
             // 
-            this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("News701 BT", 12.25F, System.Drawing.FontStyle.Bold);
@@ -230,12 +233,38 @@ namespace Corona
             this.comboBox1.Font = new System.Drawing.Font("News701 BT", 12.25F, System.Drawing.FontStyle.Bold);
             this.comboBox1.ForeColor = System.Drawing.SystemColors.WindowText;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(311, 12);
+            this.comboBox1.Location = new System.Drawing.Point(384, 19);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(222, 28);
             this.comboBox1.TabIndex = 14;
             this.comboBox1.Text = "Vyber si krajinu";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Font = new System.Drawing.Font("News701 BT", 36F, System.Drawing.FontStyle.Bold);
+            this.label14.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label14.Location = new System.Drawing.Point(5, 447);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(276, 58);
+            this.label14.TabIndex = 15;
+            this.label14.Text = "Aktívnych";
+            // 
+            // label15
+            // 
+            this.label15.BackColor = System.Drawing.Color.Transparent;
+            this.label15.Font = new System.Drawing.Font("News701 BT", 36F, System.Drawing.FontStyle.Bold);
+            this.label15.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label15.Location = new System.Drawing.Point(473, 447);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 3, 0);
+            this.label15.Name = "label15";
+            this.label15.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label15.Size = new System.Drawing.Size(435, 58);
+            this.label15.TabIndex = 16;
+            this.label15.Text = "000000";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Form1
             // 
@@ -243,8 +272,10 @@ namespace Corona
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BackgroundImage = global::Corona.Properties.Resources.Koronavirus_Covid_19_sars_cov_2_988x553;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(829, 450);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ClientSize = new System.Drawing.Size(920, 514);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.label14);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
@@ -262,7 +293,9 @@ namespace Corona
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(936, 553);
             this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(936, 553);
             this.Name = "Form1";
             this.RightToLeftLayout = true;
             this.Text = "Corona";
@@ -288,6 +321,8 @@ namespace Corona
         private Label label12;
         private Label label13;
         private ComboBox comboBox1;
+        private Label label14;
+        private Label label15;
     }
 }
 

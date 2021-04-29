@@ -5,11 +5,14 @@ namespace Corona
 {
    public class Scrapper
     {
-       
+
+
+        public string stranka = ("https://www.worldometers.info/coronavirus/");
         public string country = ("Slovakia");
         public string nakazeny;
         public string mrtvy;
         public string vylieceny;
+        public string aktivny;
 
         public string vybercountry = ("World");
         public string vybernakazeny;
@@ -35,7 +38,7 @@ namespace Corona
             // udaje ktore su v riadku danej krajny
 
             HtmlWeb htmlWeb = new HtmlWeb();
-            HtmlDocument document = htmlWeb.Load("https://www.worldometers.info/coronavirus/");
+            HtmlDocument document = htmlWeb.Load(stranka);
             HtmlNodeCollection rows = document.DocumentNode.SelectNodes("//*[@id=\"main_table_countries_today\"]/tbody[1]/tr");
 
             {
@@ -54,7 +57,8 @@ namespace Corona
                         {
                             nakazeny = columns[2].InnerText;         //do premennej nacita hodnotu z tabulky zo stlpca
                             mrtvy = columns[4].InnerText;            //do premennej nacita hodnotu z tabulky zo stlpca
-                           vylieceny = columns[6].InnerText;         //do premennej nacita hodnotu z tabulky zo stlpca
+                            vylieceny = columns[6].InnerText;         //do premennej nacita hodnotu z tabulky zo stlpca
+                            aktivny = columns[8].InnerText;         //do premennej nacita hodnotu z tabulky zo stlpca
                     }
 
                         if (columns[1].InnerText == vybercountry)

@@ -47,6 +47,7 @@ namespace Corona
             label1.Text = scrapper.nakazeny;
             label2.Text = scrapper.mrtvy;
             label3.Text = scrapper.vylieceny;
+            label15.Text = scrapper.aktivny;
 
             label11.Text = scrapper.vybernakazeny;
             label12.Text = scrapper.vybermrtvy;
